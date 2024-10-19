@@ -1,8 +1,8 @@
-import AnimePageComponent from "@/components/Animes/AnimePage/AnimePage"
+// import AnimePageComponent from "@/components/Animes/AnimePage/AnimePage"
 
 
-const AnimePage = ({ params }: { params: { name: string } }) => {
-    return <AnimePageComponent name={params.name}/>
+const AnimePage = () => {
+    return <div>asdasd</div>
 }
 
 export default AnimePage

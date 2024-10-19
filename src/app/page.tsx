@@ -1,5 +1,5 @@
 "use client"
-import Animes from "@/components/Animes/Animes";
+// import Animes from "@/components/Animes/Animes";
 import axios from "axios";
 import fileDownload from "js-file-download";
 
