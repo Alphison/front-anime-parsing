@@ -3,6 +3,8 @@
 import { useGetAnime } from "@/services/Animes/hooks/getAnime"
 import Episodes from "./Episodes/Episodes"
 import { FC } from "react"
+import axios from "axios"
+import fileDownload from "js-file-download"
 
 type TAnimePageComponentProps = {
     name: string
@@ -21,6 +23,8 @@ const AnimePageComponent:FC<TAnimePageComponentProps> = ({name}) => {
     }
 
     if(isPending) return <div>Loading...</div>
+
+    
 
     return (
         <article className="" style={stylesMain}>

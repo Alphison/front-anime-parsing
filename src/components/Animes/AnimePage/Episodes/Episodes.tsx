@@ -10,9 +10,9 @@ const Episodes:FC<TEpisodesProps> = ({episodes}) => {
     return (
         <div className="flex gap-[40px] flex-wrap">
             {
-                episodes?.map(episode => {
+                episodes?.map((episode, i) => {
                     return (
-                        <Episode number={episode.id} href={episode.url}/>
+                        <Episode key={i} number={episode.id} href={episode.url}/>
                     )
                 })
             }
